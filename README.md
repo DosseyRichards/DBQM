@@ -43,7 +43,7 @@ This simulator is based on the principle that:
 - Quantum systems evolve deterministically under the Schrödinger equation.
 - Particles follow real paths dictated by a velocity field derived from the wavefunction:
 
- v(x, t) = (ħ / m) · Im[∇ψ(x,t) / ψ(x,t)]
+`v(x, t) = (ħ / m) · Im[∇ψ(x,t) / ψ(x,t)]`
 
 - There is no collapse—just dynamic guidance through a holographic quantum field.
 

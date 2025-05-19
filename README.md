@@ -1,6 +1,6 @@
 # DBQVM: Dossey–Bohmian Quantum Virtual Machine
 
-This project implements both a **Dossey–Bohmian Quantum Virtual Machine (DBQVM)** and an interactive **Quantum Operating System (QOS)** shell based on the **Dossey–Bohmian Holographic Simulation Theory**.
+This project implements both a **Dossey–Bohmian Quantum Virtual Machine (DBQVM)** and an interactive **Quantum Operating System (QOS)** shell based on a **Bohmian Holographic Simulation Theory**.
 
 Unlike traditional quantum simulators that rely on statistical sampling and collapse postulates, this simulator evolves particles **deterministically** using **Bohmian mechanics** and simulates entangled wave effects in a **real-time holographic field grid**.
 

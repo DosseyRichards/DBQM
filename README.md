@@ -2,37 +2,38 @@
 
 This project implements both a **Dossey–Bohmian Quantum Virtual Machine (DBQVM)** and an interactive **Quantum Operating System (QOS)** shell based on the **Dossey–Bohmian Holographic Simulation Theory**.
 
-Unlike traditional quantum simulators which rely on statistical sampling and collapse postulates, this simulator evolves particles **deterministically** along paths guided by the quantum wavefunction using **Bohmian mechanics**.
+Unlike traditional quantum simulators that rely on statistical sampling and collapse postulates, this simulator evolves particles **deterministically** using **Bohmian mechanics** and simulates entangled wave effects in a **real-time holographic field grid**.
 
-The simulation represents a quantum field system where agents move, interact, entangle, and influence a shared holographic grid via deterministic evolution rules guided by quantum-like gradients.
+The environment allows both **wavefunction-based computation** and **agent-based quantum field interaction**, visualizing guided particle evolution across a simulated Hilbert space.
 
 ---
 
 ## 🚀 Features
 
-* Quantum grid simulation with entangled agent behavior
-* Deterministic field-guided agent motion
-* Real-time field emission and decay
-* Agent memory, spawning, entanglement, and field manipulation
-* Interactive terminal with custom command set
-* Real-time matplotlib animation
-* 1D Gaussian wave packet simulation (via `dbqvm_simulation.py`)
-* Bohmian guidance equation for particle velocity
-* Deterministic particle trajectory visualization
+* 2D quantum wavefield simulation with Bohmian agent dynamics
+* Deterministic wave-particle duality via the quantum potential
+* Field decay, Gaussian emission, and live wavefunction animation
+* Programmable wave sources: single slit, double slit, or general emitters
+* Support for encoding and decoding text into wavefunctions
+* Internal Hilbert space comparisons and overlap checks
+* Real-time CLI commands for quantum shell control
+* Integrated quantum memory (wavefunction DB)
+* Pre-entangled velocity updates based on gradient phase
+* Visualization of quantum interference, slits, and trajectories
 
 ---
 
 ## 📁 Files
 
-* `quantum_os_exec.py`: Main executable Quantum OS simulation
-* `dbqvm_simulation.py`: Original Dossey–Bohmian 1D simulation
+* `quantum_wave_os_bohmian_hilbert_boosted.py`: Main simulation and terminal
+* `dbqvm_simulation.py`: Original 1D simulation
 * `README.md`: This file
 
 ---
 
-## 📆 Requirements
+## 📦 Requirements
 
-* Python 3.7+
+* Python 3.8+
 * `numpy`
 * `matplotlib`
 
@@ -46,81 +47,77 @@ pip install numpy matplotlib
 
 ## ▶️ How to Run
 
-Launch the quantum OS with:
+Launch the quantum OS CLI with:
 
 ```bash
-python quantum_os_exec.py
+python quantum_wave_os_bohmian_hilbert.py
 ```
-
-To run the 1D Gaussian wave packet simulation:
-
-```bash
-python dbqvm_simulation.py
-```
-
-This will produce a plot showing the deterministic trajectories of particles under a Gaussian quantum wave packet.
 
 ---
 
 ## ⌨️ Terminal Commands
 
-Inside the terminal, use the following commands:
-
-| Command            | Example           | Description                                               |
-| ------------------ | ----------------- | --------------------------------------------------------- |
-| `emit x y amp`     | `emit 10 10 0.5`  | Emit energy to the field at (x, y) with given amplitude   |
-| `list agents`      |                   | List all agents and their positions/entanglements         |
-| `entangle id1 id2` | `entangle 0 2`    | Entangle two agents to share field influence              |
-| `kill id`          | `kill 3`          | Remove agent with specified ID                            |
-| `spawn x y`        | `spawn 25 32`     | Spawn a new agent at the given coordinates                |
-| `save [filename]`  | `save state1.qos` | Save current field and agent state to a file              |
-| `load [filename]`  | `load state1.qos` | Load a saved field/agent state                            |
-| `run`              |                   | Enter Python code interactively to modify field or agents |
-| `help`             |                   | Show available commands                                   |
-| `exit`             |                   | Exit the terminal                                         |
+| Command              | Description                                                  |
+|---------------------|--------------------------------------------------------------|
+| `emit single`       | Emit wave and align particles toward a single slit          |
+| `emit slits`        | Emit dual slits and align particles toward both slits       |
+| `emit general`      | Emit general Gaussian wave centered on the field            |
+| `setup single`      | Draw single slit on the barrier                             |
+| `setup slits`       | Draw dual slit configuration                                |
+| `clear slits`       | Remove all slit barriers                                    |
+| `encode <text>`     | Encode text into the wavefunction                           |
+| `decode [n]`        | Decode recent wavefunction into text (first n chars)       |
+| `store <text> :: <tag>` | Store text as a quantum state                         |
+| `show`              | List documents and wave states                              |
+| `exit`              | Exit the terminal                                            |
 
 ---
 
 ## 🧠 Theory Summary
 
-This simulator is based on the principle that:
+This simulator follows the tenets of:
 
-* Quantum systems evolve deterministically under the Schrödinger equation.
-* Particles follow real paths dictated by a velocity field derived from the wavefunction:
+* **Bohmian mechanics** – particles follow real paths, driven by the quantum potential
+* **Holographic theory** – all information resides on a multidimensional surface
+* **Hilbert space evolution** – wavefunctions evolve via Schrödinger-like rules
 
-`v(x, t) = (ℏ / m) · Im[∇ψ(x,t) / ψ(x,t)]`
+### Velocity Equation
 
-* There is no collapse—just dynamic guidance through a holographic quantum field.
+Particles follow the Bohmian velocity field:
 
-This system blends:
+```
+v(x, t) = (ℏ / m) · Im[∇ψ(x,t) / ψ(x,t)]
+```
 
-* **Bohmian mechanics** (deterministic paths guided by quantum potentials)
-* **Holographic simulation concepts**
-* **Field interaction via real-valued gradients and entanglement influence**
+### Encoding
 
-Agents evolve deterministically:
+Text can be encoded as perturbations in the wavefunction. You can save and compare quantum states using inner product similarity. This serves as a proof-of-concept quantum memory interface.
 
-* Sense gradients of the scalar field
-* Are influenced by entangled partners
-* Emit back into the field
+---
 
-The system forms a feedback loop resembling a quantum-classical hybrid.
+## 📊 Benchmarks & Tests
+
+Use emitted waves and slit configurations to visualize:
+
+* Interference
+* Trajectory distribution
+* Hilbert space overlap via `compare_to_reference()`
 
 ---
 
 ## 🔖 Citations & References
 
-* Bohm, D. (1952). A Suggested Interpretation of the Quantum Theory in Terms of "Hidden" Variables I & II. *Physical Review*, 85(2), 166–193.
-* Holland, P. R. (1995). *The Quantum Theory of Motion: An Account of the de Broglie-Bohm Causal Interpretation of Quantum Mechanics*. Cambridge University Press.
-* Susskind, L. (1995). The World as a Hologram. *Journal of Mathematical Physics*, 36(11), 6377–6396.
-* Valentini, A. (2002). Subquantum Information and Computation. *Pramana*, 59(2), 269–277.
-* 'Dossey–Bohmian Holographic Simulation Theory', internal drafts, D. Richards (2024).
+* Bohm, D. (1952). A Suggested Interpretation of the Quantum Theory…
+* Holland, P. R. (1995). *The Quantum Theory of Motion*
+* Susskind, L. (1995). *The World as a Hologram*
+* Valentini, A. (2002). *Subquantum Information and Computation*
+* Richards, D. (2024). *Dossey–Bohmian Holographic Simulation Theory* (internal drafts)
 
 ---
 
 ## 🌌 License
 
-MIT License. Build, repurpose, simulate.
+MIT License. Build, adapt, expand.
 
 ---
 
